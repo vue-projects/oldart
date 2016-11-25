@@ -5,6 +5,11 @@
 ## Build Setup
 
 ``` bash
+
+# install Nodejs 6.0
+node -v  #v6.0.0
+npm -v #v3.8.6
+
 # install dependencies
 npm install
 
