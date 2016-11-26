@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <login/>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Login from 'components/Login'
+import Hello from 'components/Hello'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Login, Hello
   }
 }
 </script>
@@ -23,6 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
