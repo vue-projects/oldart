@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <login/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Login from 'components/Login'
-import Hello from 'components/Hello'
-
 export default {
   name: 'app',
-  components: {
-    Login, Hello
+  data () {
+    return {}
   }
 }
 </script>
@@ -23,6 +20,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body {
+  margin: 0 auto;
 }
 
 </style>

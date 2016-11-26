@@ -1,5 +1,6 @@
 <template>
   <form>
+    <img class="bg" src="../assets/bg1.jpeg" />
     <div class="main">
       <div class="div01">
         <img src="../assets/happy.png" width="513" height="249">
@@ -44,18 +45,22 @@ export default {
   }
 }
 </script>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: url(../assets/bg1.jpeg) center top no-repeat;
-  }
-</style>
-
 <style scope lang="less">
+  img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -1000;
+  }
   .main {
     width: 1000px;
-    margin: 0 auto;
   }
   .div01 {
     width: 513px;
