@@ -45,7 +45,7 @@ export default {
   }
 }
 </script>
-<style scope lang="less">
+<style scoped lang="less">
   img.bg {
     min-height: 100%;
     min-width: 1024px;
