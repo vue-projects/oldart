@@ -1,7 +1,8 @@
 <template>
   <el-menu default-active="1">
-    <el-menu-item>接待管理</el-menu-item>
-    <el-menu-item>健康评估</el-menu-item>
+    <template v-for="item in menuItems">
+      <el-menu-item :index="item.index">{{item.title}}</el-menu-item>
+    </template>
   </el-menu>
 </template>
 
@@ -9,7 +10,15 @@
 export default {
   name: 'side-bar',
   data () {
-    return {}
+    return {
+      menuItems: [{
+        title: '健康评估',
+        index: '1'
+      }, {
+        title: '老人管理',
+        index: '2'
+      }]
+    }
   }
 }
 </script>

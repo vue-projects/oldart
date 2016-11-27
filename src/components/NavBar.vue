@@ -3,8 +3,9 @@
     <el-col :span="4"><img src="../assets/logo.png"/></el-col>
     <el-col :span="12">
       <el-menu mode="horizontal" default-active="1">
-        <el-menu-item index="1">院长</el-menu-item>
-        <el-menu-item index="2">后勤</el-menu-item>
+        <template v-for="item in menuItems">
+          <el-menu-item :index="item.index">{{item.title}}</el-menu-item>
+        </template>
       </el-menu>
     </el-col>
     <el-col :span="2"><p><b>姓名: </b>院长</p></el-col>
@@ -18,7 +19,17 @@
 export default {
   name: 'nav-bar',
   data () {
-    return {}
+    return {
+      menuItems: [{
+        title: '院长',
+        index: '1',
+        route: '#'
+      }, {
+        title: '后勤',
+        index: '2',
+        route: '#'
+      }]
+    }
   }
 }
 </script>
